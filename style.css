@@ -1,0 +1,118 @@
+
+.ajout{
+    width: 50%;
+    height: 250px;
+    text-align: center;
+    padding-top:50px;
+    margin: 30px 0% auto 25%;
+    background-color: rgb(241, 238, 235);
+    box-shadow: 10px 10px 10px gray;
+    
+}
+.titre{
+    font-size: 40px;
+    font-weight: lighter;
+
+}
+#inputTask{
+    width: 80%;
+    padding: 20px;
+    border-radius: 30px;
+    margin-bottom: 15px;
+}
+#btn-ajout , .btn-finish{
+    padding: 10px;
+    background-color: rgb(15, 152, 36);
+    color: white;
+    font-weight: bolder;
+    font-size: 20px;
+    border: none;
+    border-radius: 3px;
+    
+}
+.btn-finish{
+    gap: 30px;
+}
+#btn-ajout:hover , .btn-finish:hover{
+    background-color: white;
+    color: green;
+    }
+.btn-delete{
+    padding: 10px;
+    background-color:rgb(181, 24, 24);
+    color: white;
+    font-weight: bolder;
+    font-size: 20px;
+    border: none;
+    border-radius: 3px;
+}
+.btn-delete:hover{
+    background-color: white;
+    color:rgb(181, 24, 24);
+}
+
+ol {
+    background-color:  rgb(241, 238, 235);
+   
+}
+ li{
+  
+    padding: 10px 40px;
+  
+}
+
+.btn-item{
+    display: flex;
+    gap: 20px;
+} 
+.task-item{
+   display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  flex-wrap: wrap;
+
+}
+.listeTaches{
+    margin-top: 5%;
+}
+.input-value{
+    font-size: 20px;
+    font-weight: bolder;
+}
+@media screen and (max-width: 900px) {
+    .ajout {
+        width: 90%;  
+        padding: 30px;
+        margin: 20px ;
+    }
+
+    .titre {
+        font-size: 30px;
+    }
+
+    #inputTask {
+        width: 90%;
+        padding: 15px;
+        font-size: 16px;
+    }
+
+    .btn-item {
+        flex-direction: column; 
+        align-items: center;
+    }
+
+    .btn-item button {
+        width: 100%; 
+        margin-bottom: 5px;
+    }
+
+    .task-item {
+        flex-direction: column; 
+        align-items: center;
+        text-align: center;
+    }
+
+    ol {
+        padding: 10px;
+    }
+}
